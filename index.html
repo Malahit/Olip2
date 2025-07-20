@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Биоолимпиада</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🔬 Биоолимпиада</h1>
+            <div class="user-stats">
+                <span>Баллы: <span id="points">0</span></span>
+                <div class="achievements" id="achievements"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="progress-section">
+                <h2>Ваш прогресс</h2>
+                <div class="progress-bar">
+                    <div class="bar-label">Ботаника</div>
+                    <div class="bar-outer">
+                        <div class="bar-inner" id="botany-bar"></div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="bar-label">Зоология</div>
+                    <div class="bar-outer">
+                        <div class="bar-inner" id="zoology-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-section">
+                <h2>Задание</h2>
+                <div id="task-container"></div>
+                <button onclick="app.nextQuestion()">Следующее задание</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2023 Биоолимпиада | Готовьтесь к олимпиадам с удовольствием!</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
