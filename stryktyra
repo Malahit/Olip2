@@ -1,0 +1,14 @@
+bio-olympiad/
+├── index.html
+├── app.js
+├── data.js
+├── styles.css
+├── README.md
+├── .gitignore
+└── assets/
+    ├── images/
+    │   ├── plant.png
+    │   └── cell.png
+    └── sounds/
+        ├── success.mp3
+        └── error.mp3
